@@ -1,0 +1,72 @@
+.open-web-box {
+  min-height: 800px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+
+  .terminal-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: height 100ms linear;
+
+    &.hide {
+      display: none;
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #333;
+
+      .tab-item {
+        padding: 4px 8px;
+        cursor: pointer;
+        outline: none;
+        font-size: 12px;
+        line-height: 18px;
+        color: #aaa;
+
+        &.active {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+
+    .content {
+      flex: 1;
+      position: relative;
+
+      .terminal-item {
+        position: absolute;
+        inset: 0;
+        padding: 8px;
+        box-sizing: border-box;
+        background-color: #000;
+        visibility: hidden;
+
+        * {
+          background-color: transparent !important;
+        }
+
+        &.active {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

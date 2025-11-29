@@ -1,0 +1,83 @@
+# Source files - 源代码（保留 dist 目录）
+src/
+example/
+scripts/
+
+# Build configs - 构建配置
+*.config.ts
+*.config.js
+*.config.mjs
+*.config.cjs
+tsconfig.json
+tsconfig.*.json
+
+# Development files - 开发文件
+index.html
+test-*.html
+.editorconfig
+.gitignore
+.npmignore
+
+# CI/CD
+.github/
+.gitlab/
+.circleci/
+.travis.yml
+.gitlab-ci.yml
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# Documentation (keep README, CHANGELOG, LICENSE)
+# 保留 README.md, CHANGELOG.md, LICENSE
+QUICKSTART.md
+GUIDE.md
+DEVELOPMENT.md
+IMPROVEMENTS.md
+RELEASE.md
+PROJECT_SUMMARY.md
+
+# Build outputs (keep dist folder)
+# 保留 dist 目录，忽略其他构建产物
+website/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Testing
+**/*.test.ts
+**/*.test.tsx
+**/*.test.js
+**/*.spec.ts
+**/*.spec.tsx
+**/*.spec.js
+__tests__/
+__mocks__/
+jest.config.*
+vitest.config.*
+
+# Linting & Formatting
+.eslintrc*
+.prettierrc*
+.prettierignore
+biome.json
+.eslintignore
+
+# Misc
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+node_modules/
+*.lock
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+.cache/
+.vite/
+.parcel-cache/
